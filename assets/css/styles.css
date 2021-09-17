@@ -218,9 +218,9 @@ img {
 }
 .home__img {
   position: absolute;
-  right: 0;
+  right: 25px;
   bottom: 0;
-  width: 225px;
+  width: 240px;
 }
 
 .home__img img {
@@ -383,6 +383,7 @@ img {
 
 /* ===== CONTACT =====*/
 .contact__input {
+  font-family: poppins;
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
@@ -393,6 +394,7 @@ img {
   margin-bottom: var(--mb-4);
 }
 .contact__button {
+  font-family: poppins;
   display: block;
   border: none;
   outline: none;
@@ -476,7 +478,7 @@ img {
   }
   .home__img {
     width: 457px;
-    bottom: 35%;
+    bottom: 25%;
   }
 
   .about__container,
