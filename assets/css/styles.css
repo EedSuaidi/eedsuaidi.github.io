@@ -146,6 +146,9 @@ img {
   .home {
     text-align: center;
   }
+  .contact__home {
+    display: none;
+  }
   .home__social-icon {
     display: none;
   }
