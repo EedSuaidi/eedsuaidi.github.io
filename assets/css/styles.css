@@ -220,12 +220,12 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 295px;
+  width: 225px;
 }
 
 .home__img img {
   border-radius: 50%;
-  margin-bottom: 150px;
+  margin-bottom: 75px;
 }
 
 /*BUTTONS*/
@@ -476,7 +476,7 @@ img {
   }
   .home__img {
     width: 457px;
-    bottom: 15%;
+    bottom: 35%;
   }
 
   .about__container,
