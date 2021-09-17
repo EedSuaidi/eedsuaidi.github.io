@@ -220,11 +220,10 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 295px;
+  width: 160px;
 }
 
 .home__img img {
-  width: 50%;
   border-radius: 50%;
   margin-bottom: 75px;
 }
