@@ -143,6 +143,12 @@ img {
     background-color: var(--second-color);
     transition: 0.5s;
   }
+  .home {
+    text-align: center;
+  }
+  .home__social-icon {
+    display: none;
+  }
 }
 .nav__item {
   margin-bottom: var(--mb-4);
@@ -218,14 +224,15 @@ img {
 }
 .home__img {
   position: absolute;
-  right: 25px;
   bottom: 0;
+  margin: 0 auto 0;
   width: 240px;
 }
 
 .home__img img {
   border-radius: 50%;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
 }
 
 /*BUTTONS*/
@@ -276,6 +283,7 @@ img {
 .about__img img {
   width: 200px;
   border-radius: 0.5rem;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
 }
 
 /* ===== SKILLS =====*/
