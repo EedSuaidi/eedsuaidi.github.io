@@ -225,7 +225,7 @@ img {
 
 .home__img img {
   border-radius: 50%;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 /*BUTTONS*/
@@ -475,8 +475,8 @@ img {
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 400px;
-    bottom: 10%;
+    width: 457px;
+    bottom: 15%;
   }
 
   .about__container,
