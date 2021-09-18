@@ -238,6 +238,35 @@ img {
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
 }
 
+/*TYPING EFFECT */
+section div h1 span.cursor {
+  display: inline-block;
+  background-color: #0d6efd;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+section div h1 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -518,6 +547,9 @@ img {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+  .home__data {
+    margin-top: 150px;
   }
   .home__img {
     right: 10%;
