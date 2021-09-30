@@ -73,7 +73,6 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
-    reset: true
 });
 
 /*SCROLL HOME*/
@@ -102,11 +101,21 @@ sr.reveal('.contact__input',{interval: 200});
 /* CONTACT FORM */
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzg7qrgZ7_S-MSuTX-wUkmXJbPhyvFBgVAtBA-tG2c5mUv42hjY12kieLShWL8RVhbs/exec'
   const form = document.forms['contact-form']
+  const btnSubmit = document.querySelector('.btn-submit')
+  const btnLoading = document.querySelector('.btn-loading')
 
   form.addEventListener('submit', e => {
     e.preventDefault()
+    btnLoading.classList.toggle('invisibility')
+    btnSubmit.classList.toggle('invisibility')
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+          btnLoading.classList.toggle('invisibility')
+          btnSubmit.classList.toggle('invisibility')
+          console.log('Success!', response)
+          form.reset()
+          swal("Good job!", "Thank you for your message. It has been sent", "success");
+        })
       .catch(error => console.error('Error!', error.message))
   })
 

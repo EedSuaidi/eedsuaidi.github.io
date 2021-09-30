@@ -146,11 +146,11 @@ img {
   .home {
     text-align: center;
   }
-  .contact__home {
-    display: none;
-  }
   .home__social-icon {
     display: none;
+  }
+  .home__img img {
+    justify-self: center;
   }
 }
 .nav__item {
@@ -234,14 +234,13 @@ img {
 
 .home__img img {
   border-radius: 50%;
-  margin-bottom: 50px;
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
 }
 
 /*TYPING EFFECT */
 section div h1 span.cursor {
   display: inline-block;
-  background-color: #0d6efd;
+  background-color: var(--first-color);
   margin-left: 0.1rem;
   width: 3px;
   animation: blink 1s infinite;
@@ -377,27 +376,27 @@ section div h1 span.cursor.typing {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 100%;
+  width: 80%;
   background-color: #e34c26;
 }
 .skills__css {
-  width: 50%;
+  width: 60%;
   background-color: #264de4;
 }
 .skills__js {
-  width: 25%;
+  width: 20%;
   background-color: #f0db4f;
 }
 .skills__php {
-  width: 50%;
+  width: 40%;
   background-color: #787cb5;
 }
 .skills__laravel {
-  width: 50%;
+  width: 40%;
   background-color: #f05340;
 }
 .skills__ux {
-  width: 75%;
+  width: 60%;
   background-color: #34f5c5;
 }
 .skills__img {
@@ -441,6 +440,9 @@ section div h1 span.cursor.typing {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+}
+.invisibility {
+  display: none;
 }
 
 /* ===== FOOTER =====*/
